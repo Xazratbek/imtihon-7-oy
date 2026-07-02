@@ -18,3 +18,9 @@ staticfiles/
 HIMOYA.md
 goal.md
 frontend-ui-ux.md
+AI_CHAT_DARSLIK.md
+.claude/
+.agents/
+.playwright-mcp/
+skills-lock.json
+.playwright-mcp/

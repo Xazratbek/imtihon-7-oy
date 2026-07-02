@@ -160,6 +160,15 @@ CORS_ALLOWED_ORIGINS = os.getenv(
     "CORS_ALLOWED_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173"
 ).split(",")
 
-# AI integration (OpenRouter free models)
+# AI integration: Groq (asosiy, bepul bulutli), Ollama (zaxira, mahalliy), OpenRouter (oxirgi zaxira)
+GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
+GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+
+OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "qwen3:8b")
+
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "")
 OPENROUTER_MODEL = os.getenv("OPENROUTER_MODEL", "openai/gpt-oss-20b:free")
+
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/2'
+CELERY_BROKER_URL  = 'redis://localhost:6379/2'

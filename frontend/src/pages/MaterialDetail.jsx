@@ -1,7 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Download, ThumbsUp, ThumbsDown, Sparkles, ArrowLeft, FileText } from "lucide-react";
 import api from "../api/client";
+import Markdown from "../components/Markdown";
+import Toast from "../components/Toast";
+import ProgressBar from "../components/ProgressBar";
+import { pollTask } from "../utils/pollTask";
+import { useElapsedSeconds } from "../hooks/useElapsedSeconds";
 
 export default function MaterialDetail() {
   const { id } = useParams();
@@ -9,6 +14,11 @@ export default function MaterialDetail() {
   const [summary, setSummary] = useState("");
   const [summaryLoading, setSummaryLoading] = useState(false);
   const [error, setError] = useState("");
+  const [toast, setToast] = useState("");
+  const stopPollRef = useRef(null);
+  const elapsedSeconds = useElapsedSeconds(summaryLoading);
+
+  useEffect(() => () => stopPollRef.current?.(), []);
 
   const load = () => {
     api
@@ -36,14 +46,25 @@ export default function MaterialDetail() {
   };
 
   const handleSummary = async () => {
+    stopPollRef.current?.();
     setSummaryLoading(true);
     setSummary("");
     try {
       const { data } = await api.post("/ai/summary/", { material: Number(id) });
-      setSummary(data.summary);
+      setToast("AI faylni o'rganishni boshladi...");
+      stopPollRef.current = pollTask(data.task_id, {
+        onSuccess: (result) => {
+          setSummary(result.summary);
+          setSummaryLoading(false);
+          setToast("AI xulosa tayyor bo'ldi");
+        },
+        onError: (message) => {
+          setSummary(message);
+          setSummaryLoading(false);
+        },
+      });
     } catch {
       setSummary("Xulosa olishda xatolik yuz berdi. Keyinroq urinib ko'ring.");
-    } finally {
       setSummaryLoading(false);
     }
   };
@@ -53,6 +74,8 @@ export default function MaterialDetail() {
 
   return (
     <div className="mx-auto max-w-3xl space-y-6">
+      <Toast message={toast} onClose={() => setToast("")} />
+
       <Link to="/materiallar" className="flex items-center gap-1 text-sm text-gray-500 hover:text-gray-900">
         <ArrowLeft className="h-4 w-4" /> Materiallarga qaytish
       </Link>
@@ -134,9 +157,13 @@ export default function MaterialDetail() {
             <Sparkles className="h-4 w-4" /> AI Xulosa
           </h2>
           {summaryLoading ? (
-            <p className="mt-3 text-sm text-gray-400">AI material matnini tahlil qilmoqda...</p>
+            <div className="mt-3">
+              <ProgressBar label="AI material matnini tahlil qilmoqda..." elapsedSeconds={elapsedSeconds} />
+            </div>
           ) : (
-            <p className="mt-3 whitespace-pre-wrap text-sm leading-relaxed text-gray-600">{summary}</p>
+            <div className="mt-3">
+              <Markdown>{summary}</Markdown>
+            </div>
           )}
         </div>
       )}

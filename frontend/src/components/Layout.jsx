@@ -5,6 +5,7 @@ import {
   FileText,
   BookOpen,
   Sparkles,
+  History,
   User,
   LogOut,
   GraduationCap,
@@ -19,6 +20,7 @@ const navItems = [
   { to: "/materiallar", label: "Materiallar", icon: FileText },
   { to: "/fanlar", label: "Fanlar", icon: BookOpen },
   { to: "/ai", label: "Sun'iy intellekt", icon: Sparkles },
+  { to: "/ai/tarix", label: "Mening natijalarim", icon: History },
   { to: "/profil", label: "Profil", icon: User },
 ];
 

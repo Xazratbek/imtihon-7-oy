@@ -11,6 +11,7 @@ import MaterialDetail from "./pages/MaterialDetail";
 import Upload from "./pages/Upload";
 import Subjects from "./pages/Subjects";
 import AiTools from "./pages/AiTools";
+import AiHistory from "./pages/AiHistory";
 import Profile from "./pages/Profile";
 
 export default function App() {
@@ -35,6 +36,7 @@ export default function App() {
             <Route path="/materiallar/:id" element={<MaterialDetail />} />
             <Route path="/fanlar" element={<Subjects />} />
             <Route path="/ai" element={<AiTools />} />
+            <Route path="/ai/tarix" element={<AiHistory />} />
             <Route path="/profil" element={<Profile />} />
           </Route>
         </Routes>

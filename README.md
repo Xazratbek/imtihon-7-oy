@@ -25,11 +25,23 @@ Vite dev server `/api` so'rovlarni avtomatik `http://127.0.0.1:8001` ga proxy qi
 
 `.env` da `POSTGRES_DB` bo'sh bo'lsa, loyiha avtomatik SQLite ga tushadi (tez lokal test uchun).
 
+## AI o'rnatish (Ollama, mahalliy va bepul)
+
+AI funksiyalar (xulosa, referat generator, auto-teg) mahalliy [Ollama](https://ollama.com) orqali ishlaydi — internet, API kalit yoki to'lov shart emas.
+
+```bash
+brew install ollama         # yoki ollama.com dan yuklab oling
+ollama serve                # server fon rejimda ishga tushadi
+ollama pull qwen3:8b        # ~5GB, bir marta yuklanadi
+```
+
+Agar Ollama ishlamasa yoki o'rnatilmagan bo'lsa, tizim avtomatik `OPENROUTER_API_KEY` (agar `.env`da bo'lsa) orqali bulutli zaxira provayderga o'tadi; ikkalasi ham bo'lmasa — demo javob qaytaradi (funksiya sinmaydi).
+
 ## API hujjatlari
 
-- Swagger UI: `http://127.0.0.1:8000/api/docs/`
-- OpenAPI schema: `http://127.0.0.1:8000/api/schema/`
-- Admin panel: `http://127.0.0.1:8000/admin/`
+- Swagger UI: `http://127.0.0.1:8001/api/docs/`
+- OpenAPI schema: `http://127.0.0.1:8001/api/schema/`
+- Admin panel: `http://127.0.0.1:8001/admin/`
 
 ## Asosiy endpointlar
 
@@ -49,5 +61,3 @@ Vite dev server `/api` so'rovlarni avtomatik `http://127.0.0.1:8001` ga proxy qi
 | `/api/ai/summary/` | POST | AI xulosa |
 | `/api/ai/generate/` | POST | AI referat/konspekt generatsiya |
 | `/api/ai/auto-tag/` | POST | AI teg tavsiyasi |
-
-Imtihonda himoya qilish uchun har bir qismning tushuntirilishi: **HIMOYA.md**.

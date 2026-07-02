@@ -1,0 +1,62 @@
+- generic [ref=f5e3]:
+  - complementary [ref=f5e4]:
+    - generic [ref=f5e5]:
+      - link "EduShare" [ref=f5e6] [cursor=pointer]:
+        - /url: /
+        - img [ref=f5e7]
+        - text: EduShare
+      - navigation [ref=f5e10]:
+        - link "Dashboard" [ref=f5e11] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=f5e12]
+          - text: Dashboard
+        - link "Materiallar" [ref=f5e17] [cursor=pointer]:
+          - /url: /materiallar
+          - img [ref=f5e18]
+          - text: Materiallar
+        - link "Fanlar" [ref=f5e21] [cursor=pointer]:
+          - /url: /fanlar
+          - img [ref=f5e22]
+          - text: Fanlar
+        - link "AI Xulosa" [ref=f5e24] [cursor=pointer]:
+          - /url: /ai-xulosa
+          - img [ref=f5e25]
+          - text: AI Xulosa
+        - link "AI Referat" [ref=f5e28] [cursor=pointer]:
+          - /url: /ai-referat
+          - img [ref=f5e29]
+          - text: AI Referat
+        - link "Profil" [ref=f5e31] [cursor=pointer]:
+          - /url: /profil
+          - img [ref=f5e32]
+          - text: Profil
+      - button "Chiqish" [ref=f5e36]:
+        - img [ref=f5e37]
+        - text: Chiqish
+  - generic [ref=f5e40]:
+    - banner [ref=f5e41]:
+      - generic [ref=f5e43]:
+        - img [ref=f5e44]
+        - textbox "Material qidirish..." [ref=f5e47]
+      - generic [ref=f5e48]:
+        - generic [ref=f5e49]: T
+        - generic [ref=f5e50]: Talaba Test
+    - main [ref=f5e51]:
+      - generic [ref=f5e52]:
+        - generic [ref=f5e53]:
+          - heading "Materiallar" [level=1] [ref=f5e54]
+          - link "Material yuklash" [ref=f5e55] [cursor=pointer]:
+            - /url: /materiallar/yuklash
+            - img [ref=f5e56]
+            - text: Material yuklash
+        - generic [ref=f5e57]:
+          - generic [ref=f5e58]:
+            - img [ref=f5e59]
+            - textbox "Qidirish..." [ref=f5e62]
+          - button "Barcha fanlar" [ref=f5e64]:
+            - generic [ref=f5e65]: Barcha fanlar
+            - img [ref=f5e66]
+          - button "Eng yangi" [ref=f5e69]:
+            - generic [ref=f5e70]: Eng yangi
+            - img [ref=f5e71]
+        - generic [ref=f5e73]: Yuklanmoqda...

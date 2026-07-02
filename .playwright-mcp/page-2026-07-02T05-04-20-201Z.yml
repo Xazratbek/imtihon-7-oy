@@ -1,0 +1,19 @@
+- generic [ref=e4]:
+  - link "EduShare" [ref=e5] [cursor=pointer]:
+    - /url: /
+    - img [ref=e6]
+    - text: EduShare
+  - heading "Tizimga kirish" [level=1] [ref=e9]
+  - paragraph [ref=e10]: Hisobingizga kiring va davom eting
+  - generic [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e13]: Email
+      - textbox "siz@misol.uz" [ref=e14]
+    - generic [ref=e15]:
+      - generic [ref=e16]: Parol
+      - textbox "••••••••" [ref=e17]
+    - button "Kirish" [ref=e18]
+  - paragraph [ref=e19]:
+    - text: Hisobingiz yo'qmi?
+    - link "Ro'yxatdan o'tish" [ref=e20] [cursor=pointer]:
+      - /url: /register

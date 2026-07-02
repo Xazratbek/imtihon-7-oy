@@ -1,0 +1,101 @@
+- generic [ref=f1e21]:
+  - complementary [ref=f1e22]:
+    - generic [ref=f1e23]:
+      - link "EduShare" [ref=f1e24] [cursor=pointer]:
+        - /url: /
+        - img [ref=f1e25]
+        - text: EduShare
+      - navigation [ref=f1e28]:
+        - link "Dashboard" [ref=f1e29] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=f1e30]
+          - text: Dashboard
+        - link "Materiallar" [ref=f1e35] [cursor=pointer]:
+          - /url: /materiallar
+          - img [ref=f1e36]
+          - text: Materiallar
+        - link "Fanlar" [ref=f1e39] [cursor=pointer]:
+          - /url: /fanlar
+          - img [ref=f1e40]
+          - text: Fanlar
+        - link "AI Xulosa" [ref=f1e42] [cursor=pointer]:
+          - /url: /ai-xulosa
+          - img [ref=f1e43]
+          - text: AI Xulosa
+        - link "AI Referat" [ref=f1e46] [cursor=pointer]:
+          - /url: /ai-referat
+          - img [ref=f1e47]
+          - text: AI Referat
+        - link "Profil" [ref=f1e49] [cursor=pointer]:
+          - /url: /profil
+          - img [ref=f1e50]
+          - text: Profil
+      - button "Chiqish" [ref=f1e54]:
+        - img [ref=f1e55]
+        - text: Chiqish
+  - generic [ref=f1e58]:
+    - banner [ref=f1e59]:
+      - generic [ref=f1e61]:
+        - img [ref=f1e62]
+        - textbox "Material qidirish..." [ref=f1e65]
+      - generic [ref=f1e66]:
+        - generic [ref=f1e67]: T
+        - generic [ref=f1e68]: Talaba Test
+    - main [ref=f1e69]:
+      - generic [ref=f1e70]:
+        - heading "Dashboard" [level=1] [ref=f1e71]
+        - generic [ref=f1e72]:
+          - generic [ref=f1e73]:
+            - generic [ref=f1e74]:
+              - generic [ref=f1e75]: Yuklangan materiallar
+              - img [ref=f1e77]
+            - generic [ref=f1e80]: "1"
+          - generic [ref=f1e81]:
+            - generic [ref=f1e82]:
+              - generic [ref=f1e83]: Jami yuklab olishlar
+              - img [ref=f1e85]
+            - generic [ref=f1e88]: "1"
+          - generic [ref=f1e89]:
+            - generic [ref=f1e90]:
+              - generic [ref=f1e91]: Olingan layklar
+              - img [ref=f1e93]
+            - generic [ref=f1e95]: "1"
+          - generic [ref=f1e96]:
+            - generic [ref=f1e97]:
+              - generic [ref=f1e98]: Olingan dislayklar
+              - img [ref=f1e100]
+            - generic [ref=f1e102]: "0"
+        - generic [ref=f1e103]:
+          - generic [ref=f1e104]: Eng mashhur materiallar
+          - table [ref=f1e105]:
+            - rowgroup [ref=f1e106]:
+              - row "NOMI FAN YUKLAB OLISHLAR LAYK" [ref=f1e107]:
+                - columnheader "NOMI" [ref=f1e108]
+                - columnheader "FAN" [ref=f1e109]
+                - columnheader "YUKLAB OLISHLAR" [ref=f1e110]
+                - columnheader "LAYK" [ref=f1e111]
+            - rowgroup [ref=f1e112]:
+              - row "DRF Auth Django 1 1" [ref=f1e113]:
+                - cell "DRF Auth" [ref=f1e114]:
+                  - link "DRF Auth" [ref=f1e115] [cursor=pointer]:
+                    - /url: /materiallar/1
+                - cell "Django" [ref=f1e116]
+                - cell "1" [ref=f1e117]
+                - cell "1" [ref=f1e118]
+        - generic [ref=f1e119]:
+          - generic [ref=f1e120]: Oxirgi yuklangan materiallar
+          - table [ref=f1e121]:
+            - rowgroup [ref=f1e122]:
+              - row "NOMI FAN YUKLAB OLISHLAR LAYK" [ref=f1e123]:
+                - columnheader "NOMI" [ref=f1e124]
+                - columnheader "FAN" [ref=f1e125]
+                - columnheader "YUKLAB OLISHLAR" [ref=f1e126]
+                - columnheader "LAYK" [ref=f1e127]
+            - rowgroup [ref=f1e128]:
+              - row "DRF Auth Django 1 1" [ref=f1e129]:
+                - cell "DRF Auth" [ref=f1e130]:
+                  - link "DRF Auth" [ref=f1e131] [cursor=pointer]:
+                    - /url: /materiallar/1
+                - cell "Django" [ref=f1e132]
+                - cell "1" [ref=f1e133]
+                - cell "1" [ref=f1e134]

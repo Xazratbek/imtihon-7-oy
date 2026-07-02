@@ -1,0 +1,115 @@
+- generic [ref=e21]:
+  - complementary [ref=e22]:
+    - generic [ref=e23]:
+      - link "EduShare" [ref=e24] [cursor=pointer]:
+        - /url: /
+        - img [ref=e25]
+        - text: EduShare
+      - navigation [ref=e28]:
+        - link "Dashboard" [ref=e29] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e30]
+          - text: Dashboard
+        - link "Materiallar" [ref=e35] [cursor=pointer]:
+          - /url: /materiallar
+          - img [ref=e36]
+          - text: Materiallar
+        - link "Fanlar" [ref=e39] [cursor=pointer]:
+          - /url: /fanlar
+          - img [ref=e40]
+          - text: Fanlar
+        - link "AI Xulosa" [ref=e42] [cursor=pointer]:
+          - /url: /ai-xulosa
+          - img [ref=e43]
+          - text: AI Xulosa
+        - link "AI Referat" [ref=e46] [cursor=pointer]:
+          - /url: /ai-referat
+          - img [ref=e47]
+          - text: AI Referat
+        - link "Profil" [ref=e49] [cursor=pointer]:
+          - /url: /profil
+          - img [ref=e50]
+          - text: Profil
+      - button "Chiqish" [ref=e54]:
+        - img [ref=e55]
+        - text: Chiqish
+  - generic [ref=e58]:
+    - banner [ref=e59]:
+      - generic [ref=e61]:
+        - img [ref=e62]
+        - textbox "Material qidirish..." [ref=e65]
+      - generic [ref=e66]:
+        - generic [ref=e67]: T
+        - generic [ref=e68]: Talaba Test
+    - main [ref=e69]:
+      - generic [ref=e70]:
+        - heading "Dashboard" [level=1] [ref=e71]
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]:
+              - generic [ref=e75]: Yuklangan materiallar
+              - img [ref=e77]
+            - generic [ref=e80]: "2"
+          - generic [ref=e81]:
+            - generic [ref=e82]:
+              - generic [ref=e83]: Jami yuklab olishlar
+              - img [ref=e85]
+            - generic [ref=e88]: "1"
+          - generic [ref=e89]:
+            - generic [ref=e90]:
+              - generic [ref=e91]: Olingan layklar
+              - img [ref=e93]
+            - generic [ref=e95]: "1"
+          - generic [ref=e96]:
+            - generic [ref=e97]:
+              - generic [ref=e98]: Olingan dislayklar
+              - img [ref=e100]
+            - generic [ref=e102]: "0"
+        - generic [ref=e103]:
+          - generic [ref=e104]: Eng mashhur materiallar
+          - table [ref=e105]:
+            - rowgroup [ref=e106]:
+              - row "NOMI FAN YUKLAB OLISHLAR LAYK" [ref=e107]:
+                - columnheader "NOMI" [ref=e108]
+                - columnheader "FAN" [ref=e109]
+                - columnheader "YUKLAB OLISHLAR" [ref=e110]
+                - columnheader "LAYK" [ref=e111]
+            - rowgroup [ref=e112]:
+              - row "DRF Auth Django 1 1" [ref=e113]:
+                - cell "DRF Auth" [ref=e114]:
+                  - link "DRF Auth" [ref=e115] [cursor=pointer]:
+                    - /url: /materiallar/1
+                - cell "Django" [ref=e116]
+                - cell "1" [ref=e117]
+                - cell "1" [ref=e118]
+              - row "Kitob bilan cover Django 0 0" [ref=e119]:
+                - cell "Kitob bilan cover" [ref=e120]:
+                  - link "Kitob bilan cover" [ref=e121] [cursor=pointer]:
+                    - /url: /materiallar/2
+                - cell "Django" [ref=e122]
+                - cell "0" [ref=e123]
+                - cell "0" [ref=e124]
+        - generic [ref=e125]:
+          - generic [ref=e126]: Oxirgi yuklangan materiallar
+          - table [ref=e127]:
+            - rowgroup [ref=e128]:
+              - row "NOMI FAN YUKLAB OLISHLAR LAYK" [ref=e129]:
+                - columnheader "NOMI" [ref=e130]
+                - columnheader "FAN" [ref=e131]
+                - columnheader "YUKLAB OLISHLAR" [ref=e132]
+                - columnheader "LAYK" [ref=e133]
+            - rowgroup [ref=e134]:
+              - row "Kitob bilan cover Django 0 0" [ref=e135]:
+                - cell "Kitob bilan cover" [ref=e136]:
+                  - link "Kitob bilan cover" [ref=e137] [cursor=pointer]:
+                    - /url: /materiallar/2
+                - cell "Django" [ref=e138]
+                - cell "0" [ref=e139]
+                - cell "0" [ref=e140]
+              - row "DRF Auth Django 1 1" [ref=e141]:
+                - cell "DRF Auth" [ref=e142]:
+                  - link "DRF Auth" [ref=e143] [cursor=pointer]:
+                    - /url: /materiallar/1
+                - cell "Django" [ref=e144]
+                - cell "1" [ref=e145]
+                - cell "1" [ref=e146]

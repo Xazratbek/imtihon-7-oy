@@ -1,0 +1,60 @@
+- generic [ref=f6e3]:
+  - complementary [ref=f6e4]:
+    - generic [ref=f6e5]:
+      - link "EduShare" [ref=f6e6] [cursor=pointer]:
+        - /url: /
+        - img [ref=f6e7]
+        - text: EduShare
+      - navigation [ref=f6e10]:
+        - link "Dashboard" [ref=f6e11] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=f6e12]
+          - text: Dashboard
+        - link "Materiallar" [ref=f6e17] [cursor=pointer]:
+          - /url: /materiallar
+          - img [ref=f6e18]
+          - text: Materiallar
+        - link "Fanlar" [ref=f6e21] [cursor=pointer]:
+          - /url: /fanlar
+          - img [ref=f6e22]
+          - text: Fanlar
+        - link "AI Xulosa" [ref=f6e24] [cursor=pointer]:
+          - /url: /ai-xulosa
+          - img [ref=f6e25]
+          - text: AI Xulosa
+        - link "AI Referat" [ref=f6e28] [cursor=pointer]:
+          - /url: /ai-referat
+          - img [ref=f6e29]
+          - text: AI Referat
+        - link "Profil" [ref=f6e31] [cursor=pointer]:
+          - /url: /profil
+          - img [ref=f6e32]
+          - text: Profil
+      - button "Chiqish" [ref=f6e36]:
+        - img [ref=f6e37]
+        - text: Chiqish
+  - generic [ref=f6e40]:
+    - banner [ref=f6e41]:
+      - generic [ref=f6e43]:
+        - img [ref=f6e44]
+        - textbox "Material qidirish..." [ref=f6e47]
+      - generic [ref=f6e48]:
+        - generic [ref=f6e49]: T
+        - generic [ref=f6e50]: Talaba Test
+    - main [ref=f6e51]:
+      - generic [ref=f6e52]:
+        - generic [ref=f6e53]:
+          - heading "AI Xulosa" [level=1] [ref=f6e54]
+          - paragraph [ref=f6e55]: Materialni tanlang — AI fayl matnini o'qib, qisqacha xulosa chiqaradi.
+        - generic [ref=f6e56]:
+          - generic [ref=f6e57]:
+            - generic [ref=f6e58]: Material
+            - generic [ref=f6e59]:
+              - generic [ref=f6e75]:
+                - text: DRF Auth
+                - generic [ref=f6e76]: (Django)
+              - button [ref=f6e77]:
+                - img [ref=f6e78]
+          - button "Tahlil qilish" [ref=f6e64]:
+            - img [ref=f6e65]
+            - text: Tahlil qilish

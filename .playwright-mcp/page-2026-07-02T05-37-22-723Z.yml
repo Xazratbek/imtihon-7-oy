@@ -1,0 +1,70 @@
+- generic [ref=f11e3]:
+  - complementary [ref=f11e4]:
+    - generic [ref=f11e5]:
+      - link "EduShare" [ref=f11e6] [cursor=pointer]:
+        - /url: /
+        - img [ref=f11e7]
+        - text: EduShare
+      - navigation [ref=f11e10]:
+        - link "Dashboard" [ref=f11e11] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=f11e12]
+          - text: Dashboard
+        - link "Materiallar" [ref=f11e17] [cursor=pointer]:
+          - /url: /materiallar
+          - img [ref=f11e18]
+          - text: Materiallar
+        - link "Fanlar" [ref=f11e21] [cursor=pointer]:
+          - /url: /fanlar
+          - img [ref=f11e22]
+          - text: Fanlar
+        - link "Sun'iy intellekt" [ref=f11e24] [cursor=pointer]:
+          - /url: /ai
+          - img [ref=f11e25]
+          - text: Sun'iy intellekt
+        - link "Profil" [ref=f11e28] [cursor=pointer]:
+          - /url: /profil
+          - img [ref=f11e29]
+          - text: Profil
+      - button "Chiqish" [ref=f11e33]:
+        - img [ref=f11e34]
+        - text: Chiqish
+  - generic [ref=f11e37]:
+    - banner [ref=f11e38]:
+      - generic [ref=f11e40]:
+        - img [ref=f11e41]
+        - textbox "Material qidirish..." [ref=f11e44]
+      - generic [ref=f11e45]:
+        - generic [ref=f11e46]: T
+        - generic [ref=f11e47]: Talaba Test
+    - main [ref=f11e48]:
+      - generic [ref=f11e49]:
+        - generic [ref=f11e50]:
+          - heading "Sun'iy intellekt" [level=1] [ref=f11e51]
+          - paragraph [ref=f11e52]: AI yordamida material xulosasini oling yoki referat/konspekt yarating.
+        - generic [ref=f11e53]:
+          - button "AI Xulosa" [ref=f11e54]:
+            - img [ref=f11e55]
+            - text: AI Xulosa
+          - button "AI Referat" [active] [ref=f11e58]:
+            - img [ref=f11e59]
+            - text: AI Referat
+        - generic [ref=f11e87]:
+          - generic [ref=f11e88]:
+            - generic [ref=f11e89]: Mavzu
+            - 'textbox "Masalan: Sun''iy intellekt" [ref=f11e90]'
+          - generic [ref=f11e91]:
+            - generic [ref=f11e92]:
+              - generic [ref=f11e93]: Hujjat turi
+              - button "Referat" [ref=f11e95]:
+                - generic [ref=f11e96]: Referat
+                - img [ref=f11e97]
+            - generic [ref=f11e99]:
+              - generic [ref=f11e100]: Taxminiy hajm
+              - textbox "5 bet" [ref=f11e101]
+          - generic [ref=f11e102]:
+            - generic [ref=f11e103]: Batafsil talablar (ixtiyoriy)
+            - 'textbox "Masalan: kirish qismida tarixiy misollar bo''lsin, xulosada amaliy tavsiyalar keltirilsin..." [ref=f11e104]'
+          - button "Yaratish" [ref=f11e105]:
+            - img [ref=f11e106]
+            - text: Yaratish
